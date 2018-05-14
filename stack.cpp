@@ -20,6 +20,7 @@ int compare(char opr1, char opr2){
 }
 
 int main(){
+    // infix to postfix
     stack<char> S;
     string P = "";
     char input[50];
