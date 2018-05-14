@@ -20,7 +20,6 @@ int compare(char opr1, char opr2){
 }
 
 int main(){
-    // infix to postfix
     stack<char> S;
     string P = "";
     char input[50];
@@ -30,9 +29,9 @@ int main(){
     while(*ptr != '\0'){
         if(Operand(*ptr))
             P += *ptr;
-        else if(*ptr='(')
+        else if(*ptr=='(')
             S.push(*ptr);
-        else if(*ptr=')'){
+        else if(*ptr==')'){
             while(!S.empty()&& S.top()!='('){
                 P += S.top();
                 S.pop();
@@ -41,15 +40,16 @@ int main(){
         }
         else if(Operator(*ptr)){
            while(!S.empty()&& S.top()!='(' && compare(S.top(),*ptr)<=0){
-                S.pop();
                 P += S.top();
+                S.pop();
             }
             S.push(*ptr);
         }
+    ptr++;
     }
     while(!S.empty()){
-        S.pop();
         P += S.top();
+        S.pop();
     }
     cout<<P<<endl;
     return 0;
