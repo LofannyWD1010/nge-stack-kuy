@@ -4,6 +4,7 @@
   Lofanny Wahyu Dandi     - 1757051010
   */
 
+  //link : https://github.com/LofannyWD1010/nge-stack-kuy
 
 #include <iostream>
 #include <string>
@@ -63,9 +64,16 @@ int main(){
 
     //postfix
     //char *pnilai = P;
+    //int A, B;
 
     //while(*pnilai != '\0'){
     //    if(Operand(*pnilai)) S.push(*pnilai);
+    //    else if(Operator(*pnilai)){
+    //            S.top()==A;
+    //            S.pop();
+    //            S.top()==B;
+    //            S.pop();
+    //}
     //}
     return 0;
 }
