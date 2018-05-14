@@ -1,6 +1,14 @@
+/*Muhammad Rifki Setiawan - 1717051004
+  Muhammad Rama Wicaksono - 1717051062
+  Yosua Sandi Susanto     - 1717051064
+  Lofanny Wahyu Dandi     - 1757051010
+  */
+
+
 #include <iostream>
 #include <string>
 #include <stack>
+#include <cstring>
 using namespace std;
 
 bool Operator(char opr){
@@ -52,5 +60,12 @@ int main(){
         S.pop();
     }
     cout<<P<<endl;
+
+    //postfix
+    //char *pnilai = P;
+
+    //while(*pnilai != '\0'){
+    //    if(Operand(*pnilai)) S.push(*pnilai);
+    //}
     return 0;
 }
